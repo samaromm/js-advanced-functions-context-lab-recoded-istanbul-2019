@@ -21,19 +21,19 @@ let allWagesFor = function () {
     return payable
 }
 
-function createEmployeeRecord(){
-  return {firstName:this[0],
-          familyName:this[1],
-          title:this[2],
-          payPerHour:this[3],
+function createEmployeeRecord(arr){
+  return {firstName:arr[0],
+          familyName:arr[1],
+          title:arr[2],
+          payPerHour:arr[3],
           timeInEvents:[],
           timeOutEvents:[]}
 }
 
-function createEmployees(){
+function createEmployees(arr){
   let records=[]
-  for(let a of this){
-    records.push(createEmployeeRecord(this))
+  for(let a of arr){
+    records.push(createEmployeeRecord(arr))
   }
   return records
 }
