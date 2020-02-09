@@ -31,5 +31,9 @@ function createEmployeeRecord(){
 }
 
 function createEmployees(){
-  
+  let records=[]
+  for(let a of this){
+    records.push(createEmployeeRecord(this))
+  }
+  return records
 }
