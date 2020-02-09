@@ -41,8 +41,8 @@ function createEmployees(arr){
 function createTimeInEvent(timeIn){
   let time=timeIn.split(' ')
   let timeObj={type: "TimeIn",hour:parseInt(time[1]),date:time[0]}
-  let newarr=this.timeInEvents.push(timeObj)
-  return newarr
+  this.timeInEvents.push(timeObj)
+  return this
 }
 
 function createTimeOutEvent(arr,timeIn){
