@@ -46,10 +46,10 @@ function createTimeInEvent(timeIn){
 }
 
 function createTimeOutEvent(timeOut){
-  let time=timeIn.split(' ')
+  let time=timeOut.split(' ')
   let timeObj={type: "TimeOut",hour:parseInt(time[1]),date:time[0]}
-  arr.timeOutEvents.push(timeObj)
-  return arr
+  this.timeOutEvents.push(timeObj)
+  return this
 }
 
 function hoursWorkedOnDate(arr,date){
