@@ -63,8 +63,8 @@ function hoursWorkedOnDate(date){
   return (outHours-inHours)/100
 }
 
-function wagesEarnedOnDate(arr,date){
-  let hours=hoursWorkedOnDate(arr,date)
+function wagesEarnedOnDate(date){
+  let hours=hoursWorkedOnDate(this,date)
   return hours*arr.payPerHour
 }
 
