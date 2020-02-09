@@ -69,7 +69,7 @@ function wagesEarnedOnDate(date){
 }
 
 function calculatePayroll(emplys){
-  return emplys.reduce(function(total,ele){return total+=allWagesFor(ele)},0)
+  return emplys.reduce(function(total,ele){return total+=allWagesFor.call(ele)},0)
 }
 
 function findEmployeebyFirstName(arr,name){
