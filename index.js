@@ -65,7 +65,7 @@ function hoursWorkedOnDate(date){
 
 function wagesEarnedOnDate(date){
   let hours=hoursWorkedOnDate(this,date)
-  return hours*arr.payPerHour
+  return hours*this.payPerHour
 }
 
 function calculatePayroll(emplys){
