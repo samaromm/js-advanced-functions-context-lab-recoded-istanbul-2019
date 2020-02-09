@@ -52,8 +52,8 @@ function createTimeOutEvent(timeOut){
   return this
 }
 
-function hoursWorkedOnDate(arr,date){
-  let timeIn=arr.timeInEvents, timeOut = arr.timeOutEvents,inHours=0,outHours=0
+function hoursWorkedOnDate(date){
+  let timeIn=this.timeInEvents, timeOut = this.timeOutEvents,inHours=0,outHours=0
   for(let a of timeIn){
     if(a.date==date) {inHours=a.hour; break}
   }
