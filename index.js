@@ -68,7 +68,7 @@ function wagesEarnedOnDate(date){
   return hours*arr.payPerHour
 }
 
-function calculatePayroll(emplys){
+function payrollExpense(emplys){
   return emplys.reduce(function(total,ele){return total+=allWagesFor(ele)},0)
 }
 
