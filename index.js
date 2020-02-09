@@ -30,6 +30,14 @@ function createEmployeeRecord(arr){
           timeOutEvents:[]}
 }
 
+function createEmployeeRecords(arr){
+  let records=[]
+  for(let a of arr){
+    records.push(createEmployeeRecord(a))
+  }
+  return records
+}
+
 function createEmployees(arr){
   let records=[]
   for(let a of arr){
