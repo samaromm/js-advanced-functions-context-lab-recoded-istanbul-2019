@@ -72,7 +72,7 @@ function calculatePayroll(emplys){
   return emplys.reduce(function(total,ele){return total+=allWagesFor(ele)},0)
 }
 
-function findEmployeeByFirstName(arr,name){
+function findEmployeebyFirstName(arr,name){
   for(let ele of arr){
     if(ele.firstName==name)return ele
   }}
