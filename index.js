@@ -45,7 +45,7 @@ function createTimeInEvent(timeIn){
   return this
 }
 
-function createTimeOutEvent(arr,timeIn){
+function createTimeOutEvent(timeOut){
   let time=timeIn.split(' ')
   let timeObj={type: "TimeOut",hour:parseInt(time[1]),date:time[0]}
   arr.timeOutEvents.push(timeObj)
