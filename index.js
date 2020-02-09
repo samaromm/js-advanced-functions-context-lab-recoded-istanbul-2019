@@ -30,4 +30,6 @@ function createEmployeeRecord(){
           timeOutEvents:[]}
 }
 
-function 
+function createEmployees(){
+  
+}
