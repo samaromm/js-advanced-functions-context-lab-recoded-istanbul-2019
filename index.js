@@ -38,10 +38,10 @@ function createEmployees(arr){
   return records
 }
 
-function createTimeInEvent(arr,timeIn){
+function createTimeInEvent(timeIn){
   let time=timeIn.split(' ')
   let timeObj={type: "TimeIn",hour:parseInt(time[1]),date:time[0]}
-  arr.timeInEvents.push(timeObj)
+  this.timeInEvents.push(timeObj)
   return arr
 }
 
