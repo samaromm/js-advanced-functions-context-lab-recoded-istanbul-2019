@@ -33,7 +33,7 @@ function createEmployeeRecords(arr){
 function createEmployees(arr){
   let records=[]
   for(let a of arr){
-    records.push(createEmployeeRecord(a))
+    records.push(createEmployeeRecords(a))
   }
   return records
 }
