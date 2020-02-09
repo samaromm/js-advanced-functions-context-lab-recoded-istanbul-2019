@@ -29,3 +29,5 @@ function createEmployeeRecord(){
           timeInEvents:[],
           timeOutEvents:[]}
 }
+
+function 
